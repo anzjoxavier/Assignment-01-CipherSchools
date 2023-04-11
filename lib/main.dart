@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
       home: const HomePage(),
     );
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                 currentIndex = index;
               });
             },
-            color: Colors.orange,
+            color: AppStyles.themeColor,
             backgroundColor: Colors.white,
             items: const [
               Icon(
