@@ -8,6 +8,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Animations/ValueChangeAnimation.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,39 +23,45 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      routes: {
+     '/home':(context) =>const HomePage(),
+     },
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
-
+  static int UniversalIndex = 0;
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   List<Widget> body = [
+    
     const HomeView(),
     const CoursesView(),
     const TrendingView(),
     const ProfileView()
+    
   ];
-  int currentIndex = 0;
+  // int currentIndex =0
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        
-        body: body[currentIndex],
+        body: body[HomePage.UniversalIndex],
         bottomNavigationBar: CurvedNavigationBar(
+            index: HomePage.UniversalIndex,
             onTap: (index) {
               setState(() {
-                currentIndex = index;
+                HomePage.UniversalIndex = index;
               });
             },
             color: AppStyles.themeColor,
@@ -61,20 +69,24 @@ class _HomePageState extends State<HomePage> {
             items: const [
               Icon(
                 Icons.home,
-                semanticLabel:"Home",
+                semanticLabel: "Home",
                 color: Colors.white,
               ),
-              Icon(CupertinoIcons.collections,
-              
-              semanticLabel:"Courses",
-              color: Colors.white,),
-              Icon(CupertinoIcons.compass,
-              color: Colors.white,
-              semanticLabel:"Trending",),
-              
-              Icon(CupertinoIcons.person_fill,
-              color: Colors.white,
-              semanticLabel:"Profile",)
+              Icon(
+                CupertinoIcons.collections,
+                semanticLabel: "Courses",
+                color: Colors.white,
+              ),
+              Icon(
+                CupertinoIcons.compass,
+                color: Colors.white,
+                semanticLabel: "Trending",
+              ),
+              Icon(
+                CupertinoIcons.person_fill,
+                color: Colors.white,
+                semanticLabel: "Profile",
+              )
             ]),
       ),
     );
