@@ -1,10 +1,11 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:cipherschools/Utilities/app_layout.dart';
+import 'package:cipherschools/widgets/mentorAndRating.dart';
+import 'package:cipherschools/widgets/roundedFrame.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import '../Utilities/app_styles.dart';
+import '../widgets/appBar.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -16,75 +17,76 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+    print(height);
+    print(width);
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 8,
-        shadowColor: Colors.white,
-        title: Row(
+      appBar: AppBarClass.customAppBar,
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+        child: SingleChildScrollView(
+            child: Column(
           children: [
-            Image.asset(
-              "assets/images/Cipherschools_icon.png",
-              width: 33,
+            SizedBox(
+              height: AppLayout.getHeight(50),
             ),
-            const SizedBox(
-              width: 5,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Welcome to ",
+                  style: AppStyles.headerTextStyle,
+                ),
+                Text(
+                  "the ",
+                  style: AppStyles.headerTextStyle
+                      .copyWith(color: AppStyles.themeColor),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: AppLayout.getHeight(10),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Future ",
+                  style: AppStyles.headerTextStyle
+                      .copyWith(color: AppStyles.themeColor),
+                ),
+                Text(
+                  "of Learning! ",
+                  style: AppStyles.headerTextStyle,
+                ),
+              ],
+            ),
+            SizedBox(
+              height: AppLayout.getHeight(15),
             ),
             Text(
-              "CipherSchools",
-              style: AppStyles.titleTextStyle,
-            ),
-            const Spacer(),
-            // Icon(Icons.menu_sharp,color: Colors.black,)
-            Image.asset(
-              "assets/images/menu_icon.png",
-              width: 40,
-            ),
-          ],
-        ),
-      ),
-      body: SingleChildScrollView(
-        child:Column(
-
-        
-          children: [
-            SizedBox(
-              height: AppLayout.getHeight(50), 
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Welcome to ",style: AppStyles.headerTextStyle,),
-                Text("the ",style: AppStyles.headerTextStyle.copyWith(color: AppStyles.themeColor),),
-              ],
+              "Start Learning by best creators for",
+              style: AppStyles.subHeaderTextStyle,
             ),
             SizedBox(
-              height: AppLayout.getHeight(10), 
+              height: AppLayout.getHeight(6),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Future ",style: AppStyles.headerTextStyle.copyWith(color: AppStyles.themeColor),),
-                Text("of Learning! ",style: AppStyles.headerTextStyle,),
-              ],
-            ),
-            SizedBox(
-              height: AppLayout.getHeight(15), 
-            ),
-            Text("Start Learning by best creators for",style: AppStyles.subHeaderTextStyle,),
-            SizedBox(
-              height: AppLayout.getHeight(6), 
-            ),
-             AnimatedTextKit(
+            AnimatedTextKit(
               repeatForever: true,
               animatedTexts: [
-                TyperAnimatedText('absolutely Free',textStyle: AppStyles.animatedTextStyle,speed: Duration(milliseconds: 200)),
+                TyperAnimatedText('absolutely Free',
+                    textStyle: AppStyles.animatedTextStyle,
+                    speed: const Duration(milliseconds: 200)),
               ],
-              onTap:(){},
             ),
+            SizedBox(
+              height: AppLayout.getHeight(20),
+            ),
+           const MentorAndRating()
           ],
-        ) 
-        ),
+        )),
+      ),
     );
   }
 }

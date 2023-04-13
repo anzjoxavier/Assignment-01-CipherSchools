@@ -15,7 +15,7 @@ class AppLayout {
   }
 
   static getHeight(double pixels) {
-    final x = getScreenHeight()*(pixels/807.2727272727273);
+    final x = getScreenHeight()*(pixels/856.7272727272727);
     return x;
   }
 
