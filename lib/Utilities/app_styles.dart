@@ -1,4 +1,3 @@
-import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:flutter/material.dart';
 
 class AppStyles {
@@ -12,4 +11,10 @@ class AppStyles {
       const TextStyle(color: Colors.black, fontSize:20, fontWeight: FontWeight.w400);
   static TextStyle animatedTextStyle =
       const TextStyle(color:Colors.orange , fontSize:20, fontWeight: FontWeight.w400);
+      static TextStyle mentorAndRatingHeading =
+      const TextStyle(fontSize: 27, fontWeight: FontWeight.bold);
+  static TextStyle carouselCardHeading =
+      const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 18);
+  static TextStyle carouselCardSubHeading =
+      const TextStyle(color: Colors.white,fontSize: 9);
 }

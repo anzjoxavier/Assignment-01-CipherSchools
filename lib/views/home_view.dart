@@ -1,11 +1,12 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:cipherschools/widgets/mentorAndRating.dart';
-import 'package:cipherschools/widgets/roundedFrame.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../Utilities/app_styles.dart';
 import '../widgets/appBar.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+
+import '../widgets/carouselCardSlider.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -83,7 +84,11 @@ class _HomeViewState extends State<HomeView> {
             SizedBox(
               height: AppLayout.getHeight(20),
             ),
-           const MentorAndRating()
+            SizedBox(width: width * 0.95, child: const MentorAndRating()),
+            SizedBox(
+              height: AppLayout.getHeight(30),
+            ),
+            CarouselCardSlider()
           ],
         )),
       ),

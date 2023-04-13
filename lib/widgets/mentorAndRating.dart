@@ -1,3 +1,4 @@
+import 'package:cipherschools/Utilities/app_styles.dart';
 import 'package:cipherschools/widgets/roundedFrame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,13 +17,12 @@ class MentorAndRating extends StatelessWidget {
                 const Spacer(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children:  [
                     Text(
                       "50+",
-                      style: TextStyle(
-                          fontSize: 27, fontWeight: FontWeight.bold),
+                      style: AppStyles.mentorAndRatingHeading,
                     ),
-                    Text("Mentors")
+                   const Text("Mentors")
                   ],
                 ),
                 const Spacer(),
@@ -35,10 +35,9 @@ class MentorAndRating extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
+                     Text(
                       "4.8/5",
-                      style: TextStyle(
-                          fontSize: 27, fontWeight: FontWeight.bold),
+                      style: AppStyles.mentorAndRatingHeading,
                     ),
                     Row(
                       children: [

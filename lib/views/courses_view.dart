@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../Utilities/app_layout.dart';
 
+
 class CoursesView extends StatefulWidget {
   const CoursesView({super.key});
 
@@ -15,8 +16,9 @@ class _CoursesViewState extends State<CoursesView> {
   @override
   Widget build(BuildContext context) {
    
-    return const Scaffold(
+    return  Scaffold(
       body: Center(child: Text("Courses View")),
+      // body:SingleChildScrollView(child: Container(child: CarouselCard()))
     );
   }
 }
