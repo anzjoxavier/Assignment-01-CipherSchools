@@ -74,6 +74,9 @@ flutter:
     - assets/images/Feedback/feed3.png
     - assets/images/Feedback/feed4.png
     - assets/images/Feedback/Google_2015_logo.png
+    - assets/images/Courses/
+    - assets/images/Courses/Instructor/
+    - 
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

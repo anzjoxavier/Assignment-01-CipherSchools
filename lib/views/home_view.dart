@@ -8,6 +8,7 @@ import '../Animations/customDialogRoute.dart';
 import '../Utilities/app_styles.dart';
 import '../widgets/animatedInteger.dart';
 import '../widgets/appBar.dart';
+import '../widgets/bestAreHere.dart';
 import '../widgets/carouselCardSlider.dart';
 import '../widgets/creatorResponse.dart';
 import '../widgets/creatorsCard.dart';
@@ -125,6 +126,10 @@ class _HomeViewState extends State<HomeView> {
                   height: AppLayout.getHeight(20),
                 ),
                const CreatorsCard(),
+               SizedBox(
+                  height: AppLayout.getHeight(30),
+                ),
+              const BestsAreHere()
               ],
             ),
           )

@@ -1,4 +1,5 @@
 import 'package:cipherschools/Utilities/app_styles.dart';
+import 'package:cipherschools/widgets/constants/gridCard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_svg/svg.dart';
 
 import '../Animations/ValueChangeAnimation.dart';
 import '../Utilities/app_layout.dart';
+import '../widgets/bestAreHere.dart';
 import '../widgets/carouselSliderWithCustomIndicator.dart';
 import '../widgets/creatorsCard.dart';
 
@@ -23,7 +25,7 @@ class _CoursesViewState extends State<CoursesView> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          body: CreatorsCard(),
+          // body: SingleChildScrollView(child: BestsAreHere()),
     
     ));
   }

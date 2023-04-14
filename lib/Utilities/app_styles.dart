@@ -42,4 +42,11 @@ class AppStyles {
     fontSize: AppLayout.getHeight(18),
     fontWeight: FontWeight.w300,
   );
+  static TextStyle headerForGridCard =  TextStyle(
+    color: Colors.black,
+    fontWeight: FontWeight.bold,
+    fontSize: AppLayout.getWidth(14));
+  static TextStyle subHeaderForGridCard =  TextStyle(
+    fontSize: AppLayout.getWidth(12),
+    fontWeight: FontWeight.w300);
 }

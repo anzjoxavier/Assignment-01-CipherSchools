@@ -68,25 +68,29 @@ class SecondaryThemeCard extends StatelessWidget {
               SizedBox(
                 width: AppLayout.getWidth(15),
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(name,
-                      style: AppStyles.subHeaderForBigSquare.copyWith(
-                          color: AppStyles.themeColor,
-                          fontSize: AppLayout.getHeight(14),
-                          fontWeight: FontWeight.w400)),
-                  SizedBox(
-                    height: AppLayout.getHeight(5),
-                  ),
-                  Text(courseName,
-                  
-               
-                      style: AppStyles.subHeaderForBigSquare.copyWith(
-                          color: Colors.black,
-                          fontSize: AppLayout.getHeight(14),
-                          fontWeight: FontWeight.w400))
-                ],
+              SizedBox(
+                width: AppLayout.getWidth(260),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(name,
+                        style: AppStyles.subHeaderForBigSquare.copyWith(
+                            color: AppStyles.themeColor,
+                            fontSize: AppLayout.getHeight(14),
+                            fontWeight: FontWeight.w400)),
+                    SizedBox(
+                      height: AppLayout.getHeight(5),
+                    ),
+                    Text(courseName,
+                    
+                                 
+                        style: AppStyles.subHeaderForBigSquare.copyWith(
+                            color: Colors.black,
+                            fontSize: AppLayout.getHeight(14),
+                            fontWeight: FontWeight.w400),
+                            overflow: TextOverflow.ellipsis,)
+                  ],
+                ),
               )
             ],
           ),
