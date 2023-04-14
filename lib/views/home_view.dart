@@ -2,6 +2,8 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:cipherschools/main.dart';
 import 'package:cipherschools/widgets/bigSquare.dart';
+import 'package:cipherschools/widgets/discordCard.dart';
+import 'package:cipherschools/widgets/endPart.dart';
 import 'package:cipherschools/widgets/mentorAndRating.dart';
 import 'package:flutter/material.dart';
 import '../Animations/customDialogRoute.dart';
@@ -13,6 +15,7 @@ import '../widgets/carouselCardSlider.dart';
 import '../widgets/creatorResponse.dart';
 import '../widgets/creatorsCard.dart';
 import '../widgets/learningButton.dart';
+import '../widgets/mentors.dart';
 import '../widgets/secondaryThemeBox.dart';
 import '../widgets/topHeading.dart';
 
@@ -129,10 +132,17 @@ class _HomeViewState extends State<HomeView> {
                SizedBox(
                   height: AppLayout.getHeight(30),
                 ),
-              const BestsAreHere()
+              const BestsAreHere(),
+              SizedBox(
+                  height: AppLayout.getHeight(30),
+                ),
+                const ExpertMentors()
               ],
             ),
-          )
+          ),
+         const DiscordCard(),
+        const EndPart()
+         
         ],
       )),
     );

@@ -29,6 +29,7 @@ class _CreatorsCardState extends State<CreatorsCard> {
           height: AppLayout.getHeight(10),
         ),
         SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             scrollDirection: Axis.horizontal,
             child: Row(
               children: creatorList.map((path) => LogoImage(imgPath: path,)).toList()

@@ -29,8 +29,9 @@ class _BestsAreHereState extends State<BestsAreHere> {
       CarouselSlider.builder(
           itemCount: Data.switchItems.length,
           options: CarouselOptions(
+            autoPlay: true,
             height: AppLayout.getHeight(40),
-            viewportFraction: 0.6,
+            viewportFraction: 0.58,
           ),
           carouselController: carouselController,
           itemBuilder: (context, index, value) => GestureDetector(
@@ -38,36 +39,36 @@ class _BestsAreHereState extends State<BestsAreHere> {
                 setState(() {
                   currentIndex = index;
                 });
-                print(currentIndex);
+                
               },
               child: RectButton(text: Data.gridData.keys.elementAt(index)))),
       SizedBox(
-        height: AppLayout.getHeight(5),
+        height: AppLayout.getHeight(30),
       ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          TextButton(
-            child: const Icon(
-              Icons.arrow_circle_left,
-              size: 40,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              carouselController.previousPage();
-            },
-          ),
-          TextButton(
-            child: const Icon(
-              Icons.arrow_circle_right,
-              size: 40,
-            ),
-            onPressed: () {
-              carouselController.nextPage();
-            },
-          )
-        ],
-      ),
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.end,
+      //   children: <Widget>[
+      //     TextButton(
+      //       child: const Icon(
+      //         Icons.arrow_circle_left,
+      //         size: 40,
+      //         color: Colors.black,
+      //       ),
+      //       onPressed: () {
+      //         carouselController.previousPage();
+      //       },
+      //     ),
+      //     TextButton(
+      //       child: const Icon(
+      //         Icons.arrow_circle_right,
+      //         size: 40,
+      //       ),
+      //       onPressed: () {
+      //         carouselController.nextPage();
+      //       },
+      //     )
+      //   ],
+      // ),
       SizedBox(
         height:Data.gridData[Data.gridData.keys.elementAt(currentIndex)]!.length%2==0? 
         gridHeight * ((Data.gridData[Data.gridData.keys.elementAt(currentIndex)]!.length / 2)):
@@ -107,6 +108,7 @@ class _BestsAreHereState extends State<BestsAreHere> {
 class RectButton extends StatelessWidget {
   const RectButton({super.key, required this.text});
   final String text;
+  
   @override
   Widget build(BuildContext context) {
     return Container(
