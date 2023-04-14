@@ -10,6 +10,7 @@ import '../widgets/animatedInteger.dart';
 import '../widgets/appBar.dart';
 import '../widgets/carouselCardSlider.dart';
 import '../widgets/creatorResponse.dart';
+import '../widgets/creatorsCard.dart';
 import '../widgets/learningButton.dart';
 import '../widgets/secondaryThemeBox.dart';
 import '../widgets/topHeading.dart';
@@ -115,6 +116,18 @@ class _HomeViewState extends State<HomeView> {
             ),
           ),
           const SecondaryThemeBox(),
+          //Postion after Secondary Theme Box
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: AppLayout.getHeight(20),
+                ),
+               const CreatorsCard(),
+              ],
+            ),
+          )
         ],
       )),
     );
