@@ -3,7 +3,7 @@ import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'carouselCard.dart';
+import 'constants/carouselCard.dart';
 
 class CarouselCardSlider extends StatelessWidget {
   @override
@@ -22,7 +22,7 @@ class CarouselCardSlider extends StatelessWidget {
         IconCarouselCard(
           heading: 'Q-rated Content', 
           subHeading: 'Unlock quality content with our Q-rated content!', 
-          icon: CupertinoIcons.doc_checkmark,),
+          icon: CupertinoIcons.rosette,),
 
         //3rd Image of Slider
         IconCarouselCard(

@@ -46,22 +46,27 @@ class MentorAndRating extends StatelessWidget {
                             Icon(
                               CupertinoIcons.star_fill,
                               color: Colors.orange,
+                              size: 18,
                             ),
                             Icon(
                               CupertinoIcons.star_fill,
                               color: Colors.orange,
+                              size: 18,
                             ),
                             Icon(
                               CupertinoIcons.star_fill,
                               color: Colors.orange,
+                              size: 18,
                             ),
                             Icon(
                               CupertinoIcons.star_fill,
                               color: Colors.orange,
+                              size: 18,
                             ),
                             Icon(
                               CupertinoIcons.star_lefthalf_fill,
                               color: Colors.orange,
+                              size: 18,
                             ),
                           ],
                         ),

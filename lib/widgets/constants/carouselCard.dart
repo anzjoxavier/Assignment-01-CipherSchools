@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../Utilities/app_layout.dart';
+import '../../Utilities/app_layout.dart';
 
 class PictureCarouselCard extends StatelessWidget {
   const PictureCarouselCard(
