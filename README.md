@@ -1,6 +1,6 @@
 # cipherschools
 
-A new Flutter project.
+An assignment app for internship in CipherSchools.
 
 ## Getting Started
 
