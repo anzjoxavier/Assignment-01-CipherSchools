@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:cipherschools/main.dart';
+import 'package:cipherschools/widgets/coursesPage/recommended.dart';
 import 'package:cipherschools/widgets/homePage/bigSquare.dart';
 import 'package:cipherschools/widgets/homePage/discordCard.dart';
 import 'package:cipherschools/widgets/homePage/endPart.dart';
@@ -26,7 +27,41 @@ class HomeView extends StatefulWidget {
   State<HomeView> createState() => _HomeViewState();
 }
 
-class _HomeViewState extends State<HomeView> {
+class _HomeViewState extends State<HomeView> with TickerProviderStateMixin{
+    bool _showBackToTopButton = false;
+
+    late ScrollController _scrollController;
+
+      @override
+  void initState() {
+    _scrollController = ScrollController()
+      ..addListener(() {
+        setState(() {
+          if (_scrollController.offset >= 400) {
+            _showBackToTopButton = true; // show the back-to-top button
+          } else {
+            _showBackToTopButton = false; // hide the back-to-top button
+          }
+        });
+      });
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose(); // dispose the controller
+    super.dispose();
+  }
+
+  // This function is triggered when the user presses the back-to-top button
+  void _scrollToTop() {
+    _scrollController.animateTo(0,
+        duration: const Duration(seconds:1), curve: Curves.linear);
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -34,8 +69,15 @@ class _HomeViewState extends State<HomeView> {
     print(height);
     print(width);
     return Scaffold(
+    floatingActionButton: _showBackToTopButton == false
+          ? null
+          : FloatingActionButton(
+              onPressed: _scrollToTop,
+              child: const Icon(Icons.arrow_drop_up,size: 50,color: Colors.white,),
+            ),
       appBar: AppBarClass.customAppBar,
       body: SingleChildScrollView(
+      controller: _scrollController,
           child: Column(
         children: [
           //Column Upto Secondary Color Box
@@ -55,7 +97,7 @@ class _HomeViewState extends State<HomeView> {
                   animatedTexts: [
                     TyperAnimatedText('absolutely Free',
                         textStyle: AppStyles.animatedTextStyle,
-                        speed: const Duration(milliseconds: 200)),
+                        speed: const Duration(milliseconds: 500)),
                   ],
                 ),
                 SizedBox(

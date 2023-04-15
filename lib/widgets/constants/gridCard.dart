@@ -6,15 +6,18 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 class GridCard extends StatelessWidget {
-  const GridCard(
+   GridCard(
       {super.key,
       required this.imagPath,
       required this.category,
       required this.courseName,
       required this.noOfVideos,
       required this.noOfHours,
-      required this.intructorName, 
-      required this.instructorImgPath});
+      required this.intructorName,
+      required this.instructorImgPath,
+      this.cardColor=Colors.white,
+      this.textColor=Colors.black,
+      });
 
   final String imagPath;
   final String category;
@@ -23,7 +26,8 @@ class GridCard extends StatelessWidget {
   final double noOfHours;
   final String intructorName;
   final String instructorImgPath;
-
+  Color cardColor = Colors.white;
+  Color textColor = Colors.black;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -31,14 +35,14 @@ class GridCard extends StatelessWidget {
       height: AppLayout.getHeight(240),
       width: AppLayout.getWidth(180),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: cardColor,
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 3,
             blurRadius: 10,
-            offset: Offset(0, 3), // changes position of shadow
+            offset: const Offset(0, 3), // changes position of shadow
           ),
         ],
       ),
@@ -65,7 +69,7 @@ class GridCard extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(AppLayout.getWidth(3)),
                       bottomRight: Radius.circular(AppLayout.getWidth(3))),
-                  color: Colors.orange[50]),
+                  color: Colors.orange.withOpacity(0.3)),
               child: Center(
                   child: Text(
                 category,
@@ -81,7 +85,7 @@ class GridCard extends StatelessWidget {
                 children: [
                   Text(
                     courseName,
-                    style: AppStyles.headerForGridCard,
+                    style: AppStyles.headerForGridCard.copyWith(color:textColor),
                     overflow: TextOverflow.ellipsis,
                   ),
                   SizedBox(
@@ -90,11 +94,11 @@ class GridCard extends StatelessWidget {
                   Row(
                     children: [
                       Text("No. of videos: ",
-                          style: AppStyles.subHeaderForGridCard,
+                          style: AppStyles.subHeaderForGridCard.copyWith(color: textColor),
                           overflow: TextOverflow.ellipsis),
                       Text(noOfVideos.toString(),
                           style: AppStyles.subHeaderForGridCard
-                              .copyWith(fontWeight: FontWeight.w400),
+                              .copyWith(fontWeight: FontWeight.w400,color: textColor),
                           overflow: TextOverflow.ellipsis),
                     ],
                   ),
@@ -104,11 +108,11 @@ class GridCard extends StatelessWidget {
                   Row(
                     children: [
                       Text("Course time: ",
-                          style: AppStyles.subHeaderForGridCard,
+                          style: AppStyles.subHeaderForGridCard.copyWith(color: textColor),
                           overflow: TextOverflow.ellipsis),
                       Text("$noOfHours hours",
                           style: AppStyles.subHeaderForGridCard
-                              .copyWith(fontWeight: FontWeight.w400),
+                              .copyWith(fontWeight: FontWeight.w400,color: textColor),
                           overflow: TextOverflow.ellipsis),
                     ],
                   ),
@@ -124,8 +128,7 @@ class GridCard extends StatelessWidget {
                             shape: BoxShape.circle,
                             color: Colors.amber,
                             image: DecorationImage(
-                                image: AssetImage(
-                                    instructorImgPath))),
+                                image: AssetImage(instructorImgPath))),
                       ),
                       SizedBox(
                         width: AppLayout.getWidth(8),
@@ -139,12 +142,12 @@ class GridCard extends StatelessWidget {
                               intructorName,
                               style: AppStyles.headerForGridCard.copyWith(
                                   fontSize: AppLayout.getWidth(14),
-                                  fontWeight: FontWeight.w400),
+                                  fontWeight: FontWeight.w400,color: textColor),
                               overflow: TextOverflow.ellipsis,
                             ),
                             Text(
                               "Instructor",
-                              style: AppStyles.subHeaderForGridCard,
+                              style: AppStyles.subHeaderForGridCard.copyWith(color: textColor),
                             )
                           ],
                         ),

@@ -1,8 +1,11 @@
+import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:flutter/material.dart';
 
 import '../Utilities/app_styles.dart';
 import '../main.dart';
 import '../widgets/coursesPage/carouselSliderForCoursePage.dart';
+import '../widgets/coursesPage/latestVideos.dart';
+import '../widgets/coursesPage/recommended.dart';
 
 class CoursesView extends StatefulWidget {
   const CoursesView({super.key});
@@ -61,11 +64,24 @@ class _CoursesViewState extends State<CoursesView> {
         ),
       ),
       backgroundColor: HomePage.changeColor,
-      body: Column(
-        children: [
-         CarouselSliderForCoursePage()
-
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+           const CarouselSliderForCoursePage(),
+           SizedBox(height: AppLayout.getHeight(30),),
+           Padding(
+              padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+             child: Column(
+               children: [
+                 RecommendedCourses(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor,),
+                 LatestVideo(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor)
+               ],
+             ),
+      
+           )
+      
+          ],
+        ),
       ),
     ));
   }
