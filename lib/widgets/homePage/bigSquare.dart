@@ -1,8 +1,8 @@
-import 'package:cipherschools/widgets/learningButton.dart';
+import 'package:cipherschools/widgets/homePage/learningButton.dart';
 import 'package:flutter/material.dart';
-import '../Utilities/app_layout.dart';
-import '../Utilities/app_styles.dart';
-import 'constants/buttonForBigSquare.dart';
+import '../../Utilities/app_layout.dart';
+import '../../Utilities/app_styles.dart';
+import '../constants/buttonForBigSquare.dart';
 
 typedef TapFuntion = void Function();
 

@@ -1,8 +1,8 @@
 import 'package:cipherschools/Utilities/app_styles.dart';
-import 'package:cipherschools/widgets/roundedFrame.dart';
+import 'package:cipherschools/widgets/homePage/roundedFrame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../Utilities/app_layout.dart';
+import '../../Utilities/app_layout.dart';
 
 class MentorAndRating extends StatelessWidget {
   const MentorAndRating({super.key});

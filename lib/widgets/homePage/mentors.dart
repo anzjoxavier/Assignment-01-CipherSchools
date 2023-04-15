@@ -4,8 +4,8 @@ import 'package:cipherschools/widgets/constants/mentorCard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
-import '../Data/data.dart';
-import '../Utilities/app_layout.dart';
+import '../../Data/data.dart';
+import '../../Utilities/app_layout.dart';
 
 class ExpertMentors extends StatefulWidget {
   const ExpertMentors({super.key});

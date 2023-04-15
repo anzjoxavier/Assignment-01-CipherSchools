@@ -3,7 +3,7 @@ import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'constants/carouselCard.dart';
+import '../constants/carouselCard.dart';
 
 class CarouselCardSlider extends StatelessWidget {
   @override

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 
-import '../Utilities/app_styles.dart';
+import '../../Utilities/app_styles.dart';
 
 class AppBarClass{
 

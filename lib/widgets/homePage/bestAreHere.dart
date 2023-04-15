@@ -8,8 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../Data/data.dart';
-import 'constants/gridCard.dart';
+import '../../Data/data.dart';
+import '../constants/gridCard.dart';
 
 class BestsAreHere extends StatefulWidget {
   const BestsAreHere({super.key});
@@ -26,6 +26,10 @@ class _BestsAreHereState extends State<BestsAreHere> {
     CarouselController carouselController = CarouselController();
     return Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Text("Bests are here",style: AppStyles.headerTextStyle.copyWith(fontSize: 28),),
+      SizedBox(
+        height: AppLayout.getHeight(40),
+      ),
       CarouselSlider.builder(
           itemCount: Data.switchItems.length,
           options: CarouselOptions(

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../Animations/ValueChangeAnimation.dart';
+import '../../Animations/ValueChangeAnimation.dart';
 
 class AnimatedInteger extends StatefulWidget {
   const AnimatedInteger({super.key});

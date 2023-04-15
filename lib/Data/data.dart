@@ -358,4 +358,52 @@ class Data {
  ["https://ik.imagekit.io/cipherschools/CipherMentors/Rajan-Coding_Mentor.png","Rajan","Coding Mentor"],
  ["https://ik.imagekit.io/cipherschools/CipherMentors/Sagar-Adobe.png","Sagar","Adobe"]
  ];
+
+ static   List slideList = [
+  {
+    "decoImgPath":"assets/images/cpicture2.png",
+    "heading":"Full-stack Development using MERN",
+    "category":"Web Development",
+    "iconImgPath":"assets/images/Cipherschools_icon.png",
+    "instructorName":"Cipher Schools",
+    "buttonName":"Watch"
+  },
+  {
+    "decoImgPath":"assets/images/cpicture4.png",
+    "heading":"Python & Django For Beginners",
+    "category":"Programming",
+    "iconImgPath":"assets/images/Cipherschools_icon.png",
+    "instructorName":"Cipher Schools",
+    "buttonName":"Watch"
+  },
+  {
+    "decoImgPath":"assets/images/cpicture3.png",
+    "heading":"App Development With Flutter",
+    "category":"App Development",
+    "iconImgPath":"assets/images/Courses/Instructor/Aditya.png",
+    "instructorName":"Aditya Thakur",
+    "buttonName":"Watch"
+  },
+  {
+    "decoImgPath":"assets/images/cpicture1.png",
+    "heading":"FREE Mock IELTS/TOEFL",
+    "category":"Assessment test",
+    "iconImgPath":"assets/images/lang-logo.png",
+    "instructorName":"Languify",
+    "buttonName":"Try Now"
+  }
+  ];
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

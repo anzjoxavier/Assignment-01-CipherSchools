@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../Utilities/app_layout.dart';
-import '../Utilities/app_styles.dart';
+import '../../Utilities/app_layout.dart';
+import '../../Utilities/app_styles.dart';
 import 'carouselSliderWithCustomIndicator.dart';
-import 'constants/secondaryThemeCard.dart';
+import '../constants/secondaryThemeCard.dart';
 
 class SecondaryThemeBox extends StatelessWidget {
   const SecondaryThemeBox({super.key});

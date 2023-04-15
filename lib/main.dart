@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       routes: {
-     '/home':(context) =>const HomePage(),
-     },
+        '/home': (context) => const HomePage(),
+      },
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
@@ -36,19 +36,20 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
-  static int UniversalIndex = 0;
+  static bool switchVal = false;
+  static Color changeColor = Colors.white;
+  static Color changeTextColor = Colors.black;
+  static int universalIndex = 0;
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   List<Widget> body = [
-    
     const HomeView(),
     const CoursesView(),
     const TrendingView(),
     const ProfileView()
-    
   ];
   // int currentIndex =0
 
@@ -56,12 +57,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: body[HomePage.UniversalIndex],
+        body: body[HomePage.universalIndex],
         bottomNavigationBar: CurvedNavigationBar(
-            index: HomePage.UniversalIndex,
+            index: HomePage.universalIndex,
             onTap: (index) {
               setState(() {
-                HomePage.UniversalIndex = index;
+                HomePage.universalIndex = index;
               });
             },
             color: AppStyles.themeColor,

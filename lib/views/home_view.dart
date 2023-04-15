@@ -1,23 +1,23 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:cipherschools/Utilities/app_layout.dart';
 import 'package:cipherschools/main.dart';
-import 'package:cipherschools/widgets/bigSquare.dart';
-import 'package:cipherschools/widgets/discordCard.dart';
-import 'package:cipherschools/widgets/endPart.dart';
-import 'package:cipherschools/widgets/mentorAndRating.dart';
+import 'package:cipherschools/widgets/homePage/bigSquare.dart';
+import 'package:cipherschools/widgets/homePage/discordCard.dart';
+import 'package:cipherschools/widgets/homePage/endPart.dart';
+import 'package:cipherschools/widgets/homePage/mentorAndRating.dart';
 import 'package:flutter/material.dart';
 import '../Animations/customDialogRoute.dart';
 import '../Utilities/app_styles.dart';
-import '../widgets/animatedInteger.dart';
-import '../widgets/appBar.dart';
-import '../widgets/bestAreHere.dart';
-import '../widgets/carouselCardSlider.dart';
-import '../widgets/creatorResponse.dart';
-import '../widgets/creatorsCard.dart';
-import '../widgets/learningButton.dart';
-import '../widgets/mentors.dart';
-import '../widgets/secondaryThemeBox.dart';
-import '../widgets/topHeading.dart';
+import '../widgets/homePage/animatedInteger.dart';
+import '../widgets/homePage/appBar.dart';
+import '../widgets/homePage/bestAreHere.dart';
+import '../widgets/homePage/carouselCardSlider.dart';
+import '../widgets/homePage/creatorResponse.dart';
+import '../widgets/homePage/creatorsCard.dart';
+import '../widgets/homePage/learningButton.dart';
+import '../widgets/homePage/mentors.dart';
+import '../widgets/homePage/secondaryThemeBox.dart';
+import '../widgets/homePage/topHeading.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -40,7 +40,7 @@ class _HomeViewState extends State<HomeView> {
         children: [
           //Column Upto Secondary Color Box
           Padding(
-            padding:EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
             child: Column(
               children: [
                 SizedBox(
@@ -68,7 +68,7 @@ class _HomeViewState extends State<HomeView> {
                 LearningButton(
                   tapFuntion: () {
                     setState(() {
-                      HomePage.UniversalIndex = 1;
+                      HomePage.universalIndex = 1;
                       Navigator.of(context).popAndPushNamed('/home');
                     });
                   },
@@ -86,12 +86,13 @@ class _HomeViewState extends State<HomeView> {
                 ),
                 BigSquare(
                     mainHeading: "Best platform for the students",
-                    subHeading: "Unlock your learning potential with CipherSchools",
+                    subHeading:
+                        "Unlock your learning potential with CipherSchools",
                     buttonText: "For Students",
                     iconName: Icons.shield_outlined,
                     onTap: () {
                       setState(() {
-                        HomePage.UniversalIndex = 1;
+                        HomePage.universalIndex = 1;
                         Navigator.of(context).popAndPushNamed('/home');
                       });
                     },
@@ -128,25 +129,22 @@ class _HomeViewState extends State<HomeView> {
                 SizedBox(
                   height: AppLayout.getHeight(20),
                 ),
-               const CreatorsCard(),
-               SizedBox(
+                const CreatorsCard(),
+                SizedBox(
                   height: AppLayout.getHeight(30),
                 ),
-              const BestsAreHere(),
-              SizedBox(
+                const BestsAreHere(),
+                SizedBox(
                   height: AppLayout.getHeight(30),
                 ),
                 const ExpertMentors()
               ],
             ),
           ),
-         const DiscordCard(),
-        const EndPart()
-         
+          const DiscordCard(),
+          const EndPart()
         ],
       )),
     );
   }
 }
-
-

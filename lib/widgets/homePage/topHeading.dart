@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../Utilities/app_layout.dart';
-import '../Utilities/app_styles.dart';
+import '../../Utilities/app_layout.dart';
+import '../../Utilities/app_styles.dart';
 
 class TopHeading extends StatelessWidget {
   const TopHeading({super.key});

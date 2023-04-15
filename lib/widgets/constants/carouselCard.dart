@@ -1,9 +1,5 @@
 import 'package:cipherschools/Utilities/app_styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import '../../Utilities/app_layout.dart';
 
 class PictureCarouselCard extends StatelessWidget {

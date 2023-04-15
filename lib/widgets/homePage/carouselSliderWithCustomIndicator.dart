@@ -3,8 +3,8 @@ import 'package:cipherschools/Utilities/app_styles.dart';
 import 'package:cipherschools/widgets/constants/secondaryThemeCard.dart';
 import 'package:flutter/material.dart';
 
-import '../Data/data.dart';
-import '../Utilities/app_layout.dart';
+import '../../Data/data.dart';
+import '../../Utilities/app_layout.dart';
 
 class SecondaryThemeCarouselSlider extends StatefulWidget {
   const SecondaryThemeCarouselSlider({super.key});
