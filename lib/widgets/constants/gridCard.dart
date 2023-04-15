@@ -52,7 +52,7 @@ class GridCard extends StatelessWidget {
           children: [
             SizedBox(
               height: AppLayout.getHeight(100),
-              width: AppLayout.getWidth(181),
+              width: AppLayout.getWidth(184),
               child: Image.asset(
                 imagPath,
                 fit: BoxFit.fill,
@@ -64,7 +64,7 @@ class GridCard extends StatelessWidget {
             Container(
               height: AppLayout.getHeight(20),
               width: AppLayout.getWidth(120),
-              padding: EdgeInsets.all(AppLayout.getWidth(3)),
+              padding: EdgeInsets.all(AppLayout.getHeight(3)),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(AppLayout.getWidth(3)),
@@ -74,12 +74,12 @@ class GridCard extends StatelessWidget {
                   child: Text(
                 category,
                 style: TextStyle(
-                    color: Colors.orange, fontSize: AppLayout.getWidth(12)),
+                    color: Colors.orange, fontSize: AppLayout.getHeight(12)),
                 overflow: TextOverflow.ellipsis,
               )),
             ),
             Padding(
-              padding: EdgeInsets.all(AppLayout.getWidth(8)),
+              padding: EdgeInsets.all(AppLayout.getHeight(8)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -141,7 +141,7 @@ class GridCard extends StatelessWidget {
                             Text(
                               intructorName,
                               style: AppStyles.headerForGridCard.copyWith(
-                                  fontSize: AppLayout.getWidth(14),
+                                  fontSize: AppLayout.getHeight(14),
                                   fontWeight: FontWeight.w400,color: textColor),
                               overflow: TextOverflow.ellipsis,
                             ),

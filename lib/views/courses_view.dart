@@ -71,7 +71,7 @@ class _CoursesViewState extends State<CoursesView> {
            const CarouselSliderForCoursePage(),
            SizedBox(height: AppLayout.getHeight(30),),
            Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+              padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(10)),
              child: Column(
                children: [
                  RecommendedCourses(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor,),

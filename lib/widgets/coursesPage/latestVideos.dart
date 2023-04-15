@@ -32,7 +32,7 @@ class _LatestVideoState extends State<LatestVideo> with TickerProviderStateMixin
         Text(
           "Latest Videos",
           style: AppStyles.headerTextStyle
-              .copyWith(fontSize: 20, color: widget.textColor),
+              .copyWith(fontSize: AppLayout.getHeight(20), color: widget.textColor),
         ),
         Stack(
         children: [

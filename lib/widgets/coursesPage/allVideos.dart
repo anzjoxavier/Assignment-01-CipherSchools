@@ -23,7 +23,7 @@ class _AllVideosState extends State<AllVideos> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text("All Videos",style: AppStyles.headerTextStyle
-              .copyWith(fontSize: 20, color: widget.textColor),),
+              .copyWith(fontSize: AppLayout.getHeight(20), color: widget.textColor),),
         SizedBox(height: AppLayout.getHeight(20),),
         SizedBox(
         height:Data.allvideos["allvideos"]!.length%2==0? 

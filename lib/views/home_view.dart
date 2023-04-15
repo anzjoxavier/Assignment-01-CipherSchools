@@ -84,7 +84,7 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
               //Column Upto Secondary Color Box
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+                    EdgeInsets.symmetric(horizontal: AppLayout.getHeight(10)),
                 child: Column(
                   children: [
                     SizedBox(
@@ -169,7 +169,7 @@ class _HomeViewState extends State<HomeView> with TickerProviderStateMixin {
               //Postion after Secondary Theme Box
               Padding(
                 padding:
-                    EdgeInsets.symmetric(horizontal: AppLayout.getWidth(10)),
+                    EdgeInsets.symmetric(horizontal: AppLayout.getHeight(10)),
                 child: Column(
                   children: [
                     SizedBox(

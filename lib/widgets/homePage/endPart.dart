@@ -30,7 +30,7 @@ class EndPart extends StatelessWidget {
           ),
             Text("Cipherschools is a bootstrapped educational video streaming platform in India that is connecting passionate unskilled students to skilled Industry experts to fulfill their career dreams.",
             style: AppStyles.subHeaderForBigSquare.copyWith(color: AppStyles.secondaryColor,
-            fontSize: AppLayout.getWidth(16),
+            fontSize: AppLayout.getHeight(16),
             fontWeight: FontWeight.w400,height: AppLayout.getHeight(1.5)),),
             SizedBox(
             height: AppLayout.getHeight(20),
@@ -44,7 +44,7 @@ class EndPart extends StatelessWidget {
               ),
               Text("support@cipherschools.com",
             style: AppStyles.subHeaderForBigSquare.copyWith(color: AppStyles.secondaryColor,
-            fontSize: AppLayout.getWidth(16),
+            fontSize: AppLayout.getHeight(16),
             fontWeight: FontWeight.w400,height: AppLayout.getHeight(1.5)),),
             
           ],),
@@ -57,7 +57,7 @@ class EndPart extends StatelessWidget {
           children: [
           Text("© 2020 CipherSchools All Rights Reserved",
           style: AppStyles.subHeaderForBigSquare.copyWith(color: AppStyles.secondaryColor,
-          fontSize: AppLayout.getWidth(16),
+          fontSize: AppLayout.getHeight(16),
           fontWeight: FontWeight.w400,height: AppLayout.getHeight(1.5)),),
           SizedBox(
                 height: AppLayout.getHeight(40),

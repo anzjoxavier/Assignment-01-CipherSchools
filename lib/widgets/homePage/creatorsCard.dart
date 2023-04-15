@@ -23,7 +23,7 @@ class _CreatorsCardState extends State<CreatorsCard> {
       children: [
         Text(
           "Creators From",
-          style: AppStyles.headerTextStyle.copyWith(fontSize: 26),
+          style: AppStyles.headerTextStyle.copyWith(fontSize: AppLayout.getHeight(26)),
         ),
         SizedBox(
           height: AppLayout.getHeight(10),
@@ -45,7 +45,7 @@ class LogoImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(AppLayout.getWidth(20)),
+      padding: EdgeInsets.all(AppLayout.getHeight(20)),
       height: AppLayout.getHeight(80),
       width: AppLayout.getWidth(200),
       decoration: BoxDecoration(),

@@ -5,19 +5,15 @@ class AppStyles {
   static Color themeColor = Colors.orange;
   static Color secondaryColor =Color.fromARGB(255, 0, 24, 45);
   static TextStyle titleTextStyle =
-      const TextStyle(color: Colors.black, fontSize: 18);
-  static TextStyle headerTextStyle = const TextStyle(
-      color: Colors.black, fontSize: 35, fontWeight: FontWeight.w700);
-  // static TextStyle carouselSubHeaderTextStyle = const TextStyle(
-  //     color: Colors.black, fontSize: 20, fontWeight: FontWeight.w400);
-  // static TextStyle carouselHeaderTextStyle = const TextStyle(
-  //     color: Colors.white, fontSize: 35, fontWeight: FontWeight.w700);
-  static TextStyle subHeaderTextStyle = const TextStyle(
-      color: Colors.black, fontSize: 20, fontWeight: FontWeight.w400);
-  static TextStyle animatedTextStyle = const TextStyle(
-      color: Colors.orange, fontSize: 20, fontWeight: FontWeight.w400);
+       TextStyle(color: Colors.black, fontSize: AppLayout.getHeight(18));
+  static TextStyle headerTextStyle =  TextStyle(
+      color: Colors.black, fontSize: AppLayout.getHeight(35), fontWeight: FontWeight.w700);
+  static TextStyle subHeaderTextStyle =  TextStyle(
+      color: Colors.black, fontSize: AppLayout.getHeight(20), fontWeight: FontWeight.w400);
+  static TextStyle animatedTextStyle =  TextStyle(
+      color: Colors.orange, fontSize: AppLayout.getHeight(20), fontWeight: FontWeight.w400);
   static TextStyle mentorAndRatingHeading =
-      const TextStyle(fontSize: 27, fontWeight: FontWeight.bold);
+       TextStyle(fontSize: AppLayout.getHeight(27), fontWeight: FontWeight.bold);
   static TextStyle carouselCardHeading = TextStyle(
       color: Colors.white,
       fontWeight: FontWeight.bold,
@@ -45,8 +41,8 @@ class AppStyles {
   static TextStyle headerForGridCard =  TextStyle(
     color: Colors.black,
     fontWeight: FontWeight.bold,
-    fontSize: AppLayout.getWidth(14));
+    fontSize: AppLayout.getHeight(14));
   static TextStyle subHeaderForGridCard =  TextStyle(
-    fontSize: AppLayout.getWidth(12),
+    fontSize: AppLayout.getHeight(12),
     fontWeight: FontWeight.w300);
 }

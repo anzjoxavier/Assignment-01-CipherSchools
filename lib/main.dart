@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
     const ProfileView()
   ];
   // int currentIndex =0
-
+  
   @override
   Widget build(BuildContext context) {
     return SafeArea(

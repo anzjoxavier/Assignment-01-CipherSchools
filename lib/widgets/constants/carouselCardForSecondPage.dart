@@ -29,7 +29,7 @@ class _CarouselCardForCoursePageState extends State<CarouselCardForCoursePage> {
       height: AppLayout.getHeight(200),
       width: AppLayout.getScreenWidth(),
       padding: EdgeInsets.symmetric(
-          horizontal: AppLayout.getWidth(25), vertical: AppLayout.getWidth(20)),
+          horizontal: AppLayout.getHeight(25), vertical: AppLayout.getWidth(20)),
       decoration: BoxDecoration(
         color: Colors.amber,
         image: DecorationImage(
@@ -45,7 +45,7 @@ class _CarouselCardForCoursePageState extends State<CarouselCardForCoursePage> {
               widget.heading,
               overflow: TextOverflow.ellipsis,
               style: AppStyles.headerTextStyle.copyWith(
-                  fontSize: AppLayout.getWidth(18),
+                  fontSize: AppLayout.getHeight(18),
                   color: Colors.white,
                   fontWeight: FontWeight.w400),
             ),
@@ -54,7 +54,7 @@ class _CarouselCardForCoursePageState extends State<CarouselCardForCoursePage> {
             height: AppLayout.getHeight(5),
           ),
           Container(
-            padding: EdgeInsets.all(AppLayout.getWidth(6)),
+            padding: EdgeInsets.all(AppLayout.getHeight(6)),
             decoration: BoxDecoration(
                 color: Colors.white24,
                 borderRadius: BorderRadius.circular(AppLayout.getWidth(5))),
@@ -64,7 +64,7 @@ class _CarouselCardForCoursePageState extends State<CarouselCardForCoursePage> {
               style: TextStyle(
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
-                  fontSize: AppLayout.getWidth(12)),
+                  fontSize: AppLayout.getHeight(12)),
             ),
           ),
           SizedBox(
@@ -93,7 +93,7 @@ class _CarouselCardForCoursePageState extends State<CarouselCardForCoursePage> {
           Container(
             height: AppLayout.getHeight(25),
             width: AppLayout.getWidth(90),
-            padding: EdgeInsets.all(AppLayout.getWidth(5)),
+            padding: EdgeInsets.all(AppLayout.getHeight(5)),
             decoration: BoxDecoration(
                 color: AppStyles.themeColor,
                 borderRadius: BorderRadius.circular(AppLayout.getWidth(5))),
@@ -101,7 +101,7 @@ class _CarouselCardForCoursePageState extends State<CarouselCardForCoursePage> {
                 child: Text(
               widget.buttonName,
               overflow: TextOverflow.ellipsis,
-              style:const TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white,fontSize: AppLayout.getHeight(14)),
             )),
           )
         ],

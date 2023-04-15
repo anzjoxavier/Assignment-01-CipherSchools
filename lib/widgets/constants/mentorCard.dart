@@ -54,7 +54,7 @@ class MentorCard extends StatelessWidget {
             name,
             style: AppStyles.headerTextStyle.copyWith(
                 color: AppStyles.themeColor,
-                fontSize: AppLayout.getWidth(24),
+                fontSize: AppLayout.getHeight(24),
                 fontWeight: FontWeight.w400),
           ),
           SizedBox(
@@ -63,7 +63,7 @@ class MentorCard extends StatelessWidget {
           Text(
             company,
             style: AppStyles.subHeaderTextStyle.copyWith(
-                fontWeight: FontWeight.w300, fontSize: AppLayout.getWidth(18)),
+                fontWeight: FontWeight.w300, fontSize: AppLayout.getHeight(18)),
           )
         ],
       ),

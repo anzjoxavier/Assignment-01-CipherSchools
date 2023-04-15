@@ -10,7 +10,7 @@ class DiscordCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: AppLayout.getScreenWidth(),
-      height: AppLayout.getHeight(662),
+      height: AppLayout.getHeight(690),
       decoration: BoxDecoration(
         color: AppStyles.secondaryColor,
 
@@ -26,13 +26,13 @@ class DiscordCard extends StatelessWidget {
           ),
           Text("Join our community",style: AppStyles.headerTextStyle.copyWith(
             color: Colors.white,
-            fontSize: AppLayout.getWidth(30),
+            fontSize: AppLayout.getHeight(30),
             fontWeight: FontWeight.w700),),
             Row(
               children: [
                 Text("on",style: AppStyles.headerTextStyle.copyWith(
                 color: Colors.white,
-                fontSize: AppLayout.getWidth(30),
+                fontSize: AppLayout.getHeight(30),
                 fontWeight: FontWeight.w700),),
                 SizedBox(
             width: AppLayout.getWidth(10),
@@ -44,12 +44,12 @@ class DiscordCard extends StatelessWidget {
               ],
             ),
             Text("Come together and make a difference! Connect and grow with our Discord community! Join our community for an interactive learning experience!",
-            style: AppStyles.subHeaderForBigSquare.copyWith(fontSize: AppLayout.getWidth(16),height: AppLayout.getHeight(1.4)),),
+            style: AppStyles.subHeaderForBigSquare.copyWith(fontSize: AppLayout.getHeight(16),height: AppLayout.getHeight(1.4)),),
             SizedBox(
             height: AppLayout.getHeight(30),
           ),
           Container(
-            padding: EdgeInsets.all(AppLayout.getWidth(10)),
+            padding: EdgeInsets.all(AppLayout.getHeight(10)),
             width: AppLayout.getWidth(150), 
             decoration: BoxDecoration(borderRadius:BorderRadius.circular(AppLayout.getWidth(10)),
             color: Colors.indigoAccent
@@ -84,7 +84,10 @@ class DiscordCard extends StatelessWidget {
                 shape: BoxShape.circle
               ),
             ),
-            Image.asset("assets/images/phone.png"),
+            SizedBox(
+              height: AppLayout.getHeight(342),
+              width: AppLayout.getWidth(300),
+              child: Image.asset("assets/images/phone.png")),
 
             ])
             

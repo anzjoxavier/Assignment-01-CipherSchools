@@ -26,7 +26,7 @@ class _BestsAreHereState extends State<BestsAreHere> {
     CarouselController carouselController = CarouselController();
     return Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      Text("Bests are here",style: AppStyles.headerTextStyle.copyWith(fontSize: 28),),
+      Text("Bests are here",style: AppStyles.headerTextStyle.copyWith(fontSize: AppLayout.getHeight(28)),),
       SizedBox(
         height: AppLayout.getHeight(40),
       ),

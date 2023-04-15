@@ -79,14 +79,14 @@ class _CreatorResponseState extends State<CreatorResponse> {
                       Text(
                         "Creator Access",
                         style: AppStyles.subHeaderTextStyle.copyWith(
-                            fontWeight: FontWeight.bold, fontSize: 16),
+                            fontWeight: FontWeight.bold, fontSize: AppLayout.getHeight(16)),
                       ),
                       TextButton(
                           onPressed: () {
                             Navigator.of(context).pop();
                           },
                           child: Container(
-                            padding: EdgeInsets.all(AppLayout.getWidth(8)),
+                            padding: EdgeInsets.all(AppLayout.getHeight(8)),
                             decoration: BoxDecoration(
                                 color: AppStyles.secondaryColor,
                                 borderRadius: BorderRadius.circular(
@@ -123,7 +123,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                             BorderRadius.circular(AppLayout.getWidth(10)),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.all(AppLayout.getWidth(8)),
+                      contentPadding: EdgeInsets.all(AppLayout.getHeight(8)),
                     ),
                   ),
                   SizedBox(
@@ -144,7 +144,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                             BorderRadius.circular(AppLayout.getWidth(10)),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.all(AppLayout.getWidth(8)),
+                      contentPadding: EdgeInsets.all(AppLayout.getHeight(8)),
                     ),
                   ),
                   SizedBox(
@@ -165,7 +165,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                             BorderRadius.circular(AppLayout.getWidth(10)),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.all(AppLayout.getWidth(8)),
+                      contentPadding: EdgeInsets.all(AppLayout.getHeight(8)),
                     ),
                   ),
                   SizedBox(
@@ -182,7 +182,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                             BorderRadius.circular(AppLayout.getWidth(10)),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.all(AppLayout.getWidth(8)),
+                      contentPadding: EdgeInsets.all(AppLayout.getHeight(8)),
                     ),
                   ),
                   SizedBox(
@@ -199,7 +199,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                             BorderRadius.circular(AppLayout.getWidth(10)),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.all(AppLayout.getWidth(8)),
+                      contentPadding: EdgeInsets.all(AppLayout.getHeight(8)),
                     ),
                   ),
                   SizedBox(
@@ -218,7 +218,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                             BorderRadius.circular(AppLayout.getWidth(10)),
                         borderSide: BorderSide.none,
                       ),
-                      contentPadding: EdgeInsets.all(AppLayout.getWidth(8)),
+                      contentPadding: EdgeInsets.all(AppLayout.getHeight(8)),
                     ),
                   ),
                   SizedBox(
@@ -231,7 +231,7 @@ class _CreatorResponseState extends State<CreatorResponse> {
                           onPressed: () {},
                           child: Container(
                             width: AppLayout.getWidth(80),
-                            padding: EdgeInsets.all(AppLayout.getWidth(8)),
+                            padding: EdgeInsets.all(AppLayout.getHeight(8)),
                             decoration: BoxDecoration(
                                 color: submitColor,
                                 borderRadius: BorderRadius.circular(

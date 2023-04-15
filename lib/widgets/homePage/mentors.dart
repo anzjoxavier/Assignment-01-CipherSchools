@@ -22,7 +22,7 @@ class _ExpertMentorsState extends State<ExpertMentors> {
         Text(
           "Our Expert Mentors",
           style: AppStyles.headerTextStyle
-              .copyWith(fontSize: AppLayout.getWidth(26)),
+              .copyWith(fontSize: AppLayout.getHeight(26)),
         ),
         CarouselSlider.builder(
             itemCount: Data.mentorList.length,

@@ -12,7 +12,7 @@ class ButtonForBigSquare extends StatelessWidget {
     
     return Container(
       width: AppLayout.getWidth(140),
-      padding: EdgeInsets.all(AppLayout.getWidth(7)),
+      padding: EdgeInsets.all(AppLayout.getHeight(7)),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.white, width: 1),
           borderRadius: BorderRadius.circular(10)),

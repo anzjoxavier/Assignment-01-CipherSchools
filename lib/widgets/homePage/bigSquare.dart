@@ -24,7 +24,7 @@ class BigSquare extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(AppLayout.getWidth(15)),
+      padding: EdgeInsets.all(AppLayout.getHeight(15)),
       height: AppLayout.getHeight(310),
       width: AppLayout.getWidth(380),
       decoration: BoxDecoration(

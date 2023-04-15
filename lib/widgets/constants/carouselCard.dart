@@ -14,7 +14,7 @@ class PictureCarouselCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding:  EdgeInsets.all(AppLayout.getHeight(20)),
       height: AppLayout.getHeight(180),
       width: AppLayout.getWidth(180),
       decoration: BoxDecoration(
@@ -34,7 +34,7 @@ class PictureCarouselCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Container(
-            padding: EdgeInsets.all(AppLayout.getWidth(10)),
+            padding: EdgeInsets.all(AppLayout.getHeight(10)),
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.white,
@@ -73,7 +73,7 @@ class IconCarouselCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(AppLayout.getHeight(20)),
       height: AppLayout.getHeight(180),
       width: AppLayout.getWidth(180),
       decoration: BoxDecoration(
@@ -93,7 +93,7 @@ class IconCarouselCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Container(
-            padding: EdgeInsets.all(AppLayout.getWidth(10)),
+            padding: EdgeInsets.all(AppLayout.getHeight(10)),
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.white,

@@ -35,7 +35,7 @@ class _RecommendedCoursesState extends State<RecommendedCourses>
         Text(
           "Recommended Courses",
           style: AppStyles.headerTextStyle
-              .copyWith(fontSize: 20, color: widget.textColor),
+              .copyWith(fontSize: AppLayout.getHeight(20), color: widget.textColor),
         ),
         Stack(children: [
           SizedBox(

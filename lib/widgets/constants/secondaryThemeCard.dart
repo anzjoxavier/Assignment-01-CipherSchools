@@ -43,7 +43,7 @@ class SecondaryThemeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       
-      padding: EdgeInsets.all(AppLayout.getWidth(15)),
+      padding: EdgeInsets.all(AppLayout.getHeight(15)),
       height: AppLayout.getHeight(280),
       width: AppLayout.getWidth(355),
       decoration: BoxDecoration(

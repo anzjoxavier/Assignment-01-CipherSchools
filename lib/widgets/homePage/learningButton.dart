@@ -13,7 +13,7 @@ class LearningButton extends StatelessWidget {
     return GestureDetector(
       onTap:tapFuntion,
       child: Container(
-        padding: EdgeInsets.all(AppLayout.getWidth(8)),
+        padding: EdgeInsets.all(AppLayout.getHeight(8)),
         width: AppLayout.getWidth(180),
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(10)),
@@ -21,12 +21,12 @@ class LearningButton extends StatelessWidget {
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children:  [
             Text(
               "Start Learning Now",
-              style: TextStyle(fontSize: 14, color: Colors.white),
+              style: TextStyle(fontSize: AppLayout.getHeight(14), color: Colors.white),
             ),
-            Icon(Icons.arrow_forward_rounded, color: Colors.white)
+          const  Icon(Icons.arrow_forward_rounded, color: Colors.white)
           ],
         ),
       ),

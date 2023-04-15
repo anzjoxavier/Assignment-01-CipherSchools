@@ -50,7 +50,7 @@ class _IntegerIncreaseWidgetState extends State<IntegerIncreaseWidget>
       animation: animationController,
       builder: (context, child) {
         return Container(
-          padding: EdgeInsets.all(AppLayout.getWidth(10)),
+          padding: EdgeInsets.all(AppLayout.getHeight(10)),
           width: AppLayout.getWidth(180),
           height: AppLayout.getHeight(120),
           // decoration: const BoxDecoration(color: Colors.green),
