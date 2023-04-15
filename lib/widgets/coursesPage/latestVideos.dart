@@ -98,10 +98,10 @@ class _LatestVideoState extends State<LatestVideo> with TickerProviderStateMixin
                         color: widget.textColor,
                       ),
                       onPressed: () {
-                         double i = _scrollController.offset;
-                        if (i>0) {
-                          i -= 190;
-                          _scrollController.animateTo(i,
+                         int i = _scrollController.offset~/190;
+                        if (i>=0) {
+                          i -= 1;
+                          _scrollController.animateTo(i*190,
                               duration: const Duration(seconds: 1),
                               curve: Curves.linear);
                         }
@@ -126,15 +126,13 @@ class _LatestVideoState extends State<LatestVideo> with TickerProviderStateMixin
                         color: widget.textColor,
                       ),
                       onPressed: () {
-                         double i = _scrollController.offset;
-                        if (i < 760) {
-                          i += 190;
-                          _scrollController.animateTo(i,
+                         int i = _scrollController.offset~/190;
+                        if (i < 770~/190) {
+                          i += 1;
+                          _scrollController.animateTo(i*190,
                               duration: const Duration(seconds: 1),
                               curve: Curves.linear);
                         }
-                                   
-                  
                       },
                     ),
                   )
