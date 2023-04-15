@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../Utilities/app_styles.dart';
 import '../main.dart';
+import '../widgets/coursesPage/allVideos.dart';
 import '../widgets/coursesPage/carouselSliderForCoursePage.dart';
 import '../widgets/coursesPage/latestVideos.dart';
 import '../widgets/coursesPage/recommended.dart';
@@ -74,7 +75,8 @@ class _CoursesViewState extends State<CoursesView> {
              child: Column(
                children: [
                  RecommendedCourses(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor,),
-                 LatestVideo(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor)
+                 LatestVideo(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor),
+                 AllVideos(textColor: HomePage.changeTextColor,cardColor: HomePage.changeColor,)
                ],
              ),
       

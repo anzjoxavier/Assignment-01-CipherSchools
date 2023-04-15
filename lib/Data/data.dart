@@ -344,66 +344,378 @@ class Data {
       },
     ],
   };
- static List<List<String>> mentorList = [
-   ["https://ik.imagekit.io/cipherschools/CipherMentors/Shreyas-PayPal.png","Shreyas","PayPal"],
-  ["https://ik.imagekit.io/cipherschools/CipherMentors/Sanjeev-Oracle.png","Sanjeev","Oracle"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Satyam-Microsoft.png","Satyam","Microsoft"],
+  static Map<String, List<Map<String, dynamic>>> coursedata = {
+    "LatestVideos": [
+      {
+        "imagPath": "assets/images/Courses/course16.png",
+        "category": "Programming",
+        "courseName": "Java - Full-stack crash course for Interview Prep",
+        "noOfVideos": 25,
+        "noOfHours": 9.7,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course9.png",
+        "category": "Game Development",
+        "courseName":
+            "Getting Started with Unity: Unity C# Tutorials For Beginners in Hindi",
+        "noOfVideos": 10,
+        "noOfHours": 0.8,
+        "intructorName": "Danish Shaikh",
+        "instructorImgPath": "assets/images/Courses/Instructor/Danish.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course10.png",
+        "category": "App Development",
+        "courseName":
+            "Learn to Develop Android & iOs Applications via Thunkable",
+        "noOfVideos": 7,
+        "noOfHours": 1.3,
+        "intructorName": "Anubhav Mishra",
+        "instructorImgPath": "assets/images/Courses/Instructor/Anubhav.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course17.png",
+        "category": "Programming",
+        "courseName": "C++ Programming Course | Beginner to Advanced",
+        "noOfVideos": 26,
+        "noOfHours": 14.0,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course4.png",
+        "category": "Web Development",
+        "courseName": "Hyper Text Markup Language (HTML)",
+        "noOfVideos": 21,
+        "noOfHours": 2.0,
+        "intructorName": "Shruti Codes",
+        "instructorImgPath": "assets/images/Courses/Instructor/shruti.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course7.png",
+        "category": "Web Development",
+        "courseName": "Web Development",
+        "noOfVideos": 138,
+        "noOfHours": 21.8,
+        "intructorName": "Harshit Vashisth",
+        "instructorImgPath": "assets/images/Courses/Instructor/Harshit.png",
+      },
+    ],
+    "recommended": [
+      {
+        "imagPath": "assets/images/Courses/course1.png",
+        "category": "Web Development",
+        "courseName": "Cascading Style Sheet (CSS)",
+        "noOfVideos": 24,
+        "noOfHours": 3.0,
+        "intructorName": "Shruti Codes",
+        "instructorImgPath": "assets/images/Courses/Instructor/shruti.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course2.png",
+        "category": "Programming",
+        "courseName": "Complete Python Tutorial in Hindi",
+        "noOfVideos": 241,
+        "noOfHours": 27.8,
+        "intructorName": "Harshit Vashisth",
+        "instructorImgPath": "assets/images/Courses/Instructor/Harshit.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course4.png",
+        "category": "Web Development",
+        "courseName": "Hyper Text Markup Language (HTML)",
+        "noOfVideos": 21,
+        "noOfHours": 2.0,
+        "intructorName": "Shruti Codes",
+        "instructorImgPath": "assets/images/Courses/Instructor/shruti.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course12.png",
+        "category": "Data Structures",
+        "courseName": "Competitive Coding using C++ for Interview Prep",
+        "noOfVideos": 50,
+        "noOfHours": 24.3,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course5.png",
+        "category": "App Development",
+        "courseName": "App Development With Flutter",
+        "noOfVideos": 20,
+        "noOfHours": 3.3,
+        "intructorName": "Aditya Thakur",
+        "instructorImgPath": "assets/images/Courses/Instructor/Aditya.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course7.png",
+        "category": "Web Development",
+        "courseName": "Web Development",
+        "noOfVideos": 138,
+        "noOfHours": 21.8,
+        "intructorName": "Harshit Vashisth",
+        "instructorImgPath": "assets/images/Courses/Instructor/Harshit.png",
+      },
+    ]
+  };
 
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Anurag-Coding_Mentor.png","Anurag","Coding Mentor"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Aditya-100ms.png","Aditya","100ms"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Aman-Amazon.png","Aman","Amazon"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Ayushi-Walmart.png","Ayushi","Walmart"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Harshit-Coding_Mentor.png","Harshit","Coding Mentor"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Harshit-Swiggy.png","Harshit","Swiggy"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Rajan-Coding_Mentor.png","Rajan","Coding Mentor"],
- ["https://ik.imagekit.io/cipherschools/CipherMentors/Sagar-Adobe.png","Sagar","Adobe"]
- ];
+  static Map<String, List<Map<String, dynamic>>> allvideos = {
+   "allvideos":[
+      {
+        "imagPath": "assets/images/Courses/course6.png",
+        "category": "App Development",
+        "courseName":
+            "Learn to Develop Android & iOs Applications via Thunkable",
+        "noOfVideos": 6,
+        "noOfHours": 1.7,
+        "intructorName": "Anubhav Mishra",
+        "instructorImgPath": "assets/images/Courses/Instructor/Anubhav.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course5.png",
+        "category": "App Development",
+        "courseName": "App Development With Flutter",
+        "noOfVideos": 20,
+        "noOfHours": 3.3,
+        "intructorName": "Aditya Thakur",
+        "instructorImgPath": "assets/images/Courses/Instructor/Aditya.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course3.png",
+        "category": "Web Development",
+        "courseName": "JavaScript (JS)",
+        "noOfVideos": 36,
+        "noOfHours": 5.1,
+        "intructorName": "Shruti Codes",
+        "instructorImgPath": "assets/images/Courses/Instructor/shruti.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course1.png",
+        "category": "Web Development",
+        "courseName": "Cascading Style Sheet (CSS)",
+        "noOfVideos": 24,
+        "noOfHours": 3.0,
+        "intructorName": "Shruti Codes",
+        "instructorImgPath": "assets/images/Courses/Instructor/shruti.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course4.png",
+        "category": "Web Development",
+        "courseName": "Hyper Text Markup Language (HTML)",
+        "noOfVideos": 21,
+        "noOfHours": 2.0,
+        "intructorName": "Shruti Codes",
+        "instructorImgPath": "assets/images/Courses/Instructor/shruti.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course7.png",
+        "category": "Web Development",
+        "courseName": "Web Development",
+        "noOfVideos": 138,
+        "noOfHours": 21.8,
+        "intructorName": "Harshit Vashisth",
+        "instructorImgPath": "assets/images/Courses/Instructor/Harshit.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course8.png",
+        "category": "Game Development",
+        "courseName":
+            "Getting Started with Unity: Unity UI Tutorials For Beginners in Hindi",
+        "noOfVideos": 10,
+        "noOfHours": 1.1,
+        "intructorName": "Danish Shaikh",
+        "instructorImgPath": "assets/images/Courses/Instructor/Danish.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course9.png",
+        "category": "Game Development",
+        "courseName":
+            "Getting Started with Unity: Unity C# Tutorials For Beginners in Hindi",
+        "noOfVideos": 10,
+        "noOfHours": 0.8,
+        "intructorName": "Danish Shaikh",
+        "instructorImgPath": "assets/images/Courses/Instructor/Danish.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course10.png",
+        "category": "App Development",
+        "courseName":
+            "Learn to Develop Android & iOs Applications via Thunkable",
+        "noOfVideos": 7,
+        "noOfHours": 1.3,
+        "intructorName": "Anubhav Mishra",
+        "instructorImgPath": "assets/images/Courses/Instructor/Anubhav.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course11.png",
+        "category": "Data Structures",
+        "courseName": "Data Structures & Algorithm using Java",
+        "noOfVideos": 101,
+        "noOfHours": 31.1,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course12.png",
+        "category": "Data Structures",
+        "courseName": "Competitive Coding using C++ for Interview Prep",
+        "noOfVideos": 50,
+        "noOfHours": 24.3,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course13.png",
+        "category": "Data Structures",
+        "courseName":
+            "Competitive Programming using C++ | Quick Recap & Practice",
+        "noOfVideos": 49,
+        "noOfHours": 15.9,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course14.png",
+        "category": "Data Structures",
+        "courseName":
+            "Competitive Programming Crash Course using JAVA for Interview Prep",
+        "noOfVideos": 43,
+        "noOfHours": 31.0,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course2.png",
+        "category": "Programming",
+        "courseName": "Complete Python Tutorial in Hindi",
+        "noOfVideos": 241,
+        "noOfHours": 27.8,
+        "intructorName": "Harshit Vashisth",
+        "instructorImgPath": "assets/images/Courses/Instructor/Harshit.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course15.png",
+        "category": "Programming",
+        "courseName": "Python & Django For Beginners",
+        "noOfVideos": 33,
+        "noOfHours": 11.9,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course16.png",
+        "category": "Programming",
+        "courseName": "Java - Full-stack crash course for Interview Prep",
+        "noOfVideos": 25,
+        "noOfHours": 9.7,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
+      {
+        "imagPath": "assets/images/Courses/course17.png",
+        "category": "Programming",
+        "courseName": "C++ Programming Course | Beginner to Advanced",
+        "noOfVideos": 26,
+        "noOfHours": 14.0,
+        "intructorName": "Cipher Schools",
+        "instructorImgPath": "assets/images/Cipherschools_icon.png",
+      },
 
- static   List slideList = [
-  {
-    "decoImgPath":"assets/images/cpicture2.png",
-    "heading":"Full-stack Development using MERN",
-    "category":"Web Development",
-    "iconImgPath":"assets/images/Cipherschools_icon.png",
-    "instructorName":"Cipher Schools",
-    "buttonName":"Watch"
-  },
-  {
-    "decoImgPath":"assets/images/cpicture4.png",
-    "heading":"Python & Django For Beginners",
-    "category":"Programming",
-    "iconImgPath":"assets/images/Cipherschools_icon.png",
-    "instructorName":"Cipher Schools",
-    "buttonName":"Watch"
-  },
-  {
-    "decoImgPath":"assets/images/cpicture3.png",
-    "heading":"App Development With Flutter",
-    "category":"App Development",
-    "iconImgPath":"assets/images/Courses/Instructor/Aditya.png",
-    "instructorName":"Aditya Thakur",
-    "buttonName":"Watch"
-  },
-  {
-    "decoImgPath":"assets/images/cpicture1.png",
-    "heading":"FREE Mock IELTS/TOEFL",
-    "category":"Assessment test",
-    "iconImgPath":"assets/images/lang-logo.png",
-    "instructorName":"Languify",
-    "buttonName":"Try Now"
-  }
+   ]
+  };
+
+  static List<List<String>> mentorList = [
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Shreyas-PayPal.png",
+      "Shreyas",
+      "PayPal"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Sanjeev-Oracle.png",
+      "Sanjeev",
+      "Oracle"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Satyam-Microsoft.png",
+      "Satyam",
+      "Microsoft"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Anurag-Coding_Mentor.png",
+      "Anurag",
+      "Coding Mentor"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Aditya-100ms.png",
+      "Aditya",
+      "100ms"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Aman-Amazon.png",
+      "Aman",
+      "Amazon"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Ayushi-Walmart.png",
+      "Ayushi",
+      "Walmart"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Harshit-Coding_Mentor.png",
+      "Harshit",
+      "Coding Mentor"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Harshit-Swiggy.png",
+      "Harshit",
+      "Swiggy"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Rajan-Coding_Mentor.png",
+      "Rajan",
+      "Coding Mentor"
+    ],
+    [
+      "https://ik.imagekit.io/cipherschools/CipherMentors/Sagar-Adobe.png",
+      "Sagar",
+      "Adobe"
+    ]
   ];
 
-
-
-
-
-
-
-
-
-
-
-
-
+  static List slideList = [
+    {
+      "decoImgPath": "assets/images/cpicture2.png",
+      "heading": "Full-stack Development using MERN",
+      "category": "Web Development",
+      "iconImgPath": "assets/images/Cipherschools_icon.png",
+      "instructorName": "Cipher Schools",
+      "buttonName": "Watch"
+    },
+    {
+      "decoImgPath": "assets/images/cpicture4.png",
+      "heading": "Python & Django For Beginners",
+      "category": "Programming",
+      "iconImgPath": "assets/images/Cipherschools_icon.png",
+      "instructorName": "Cipher Schools",
+      "buttonName": "Watch"
+    },
+    {
+      "decoImgPath": "assets/images/cpicture3.png",
+      "heading": "App Development With Flutter",
+      "category": "App Development",
+      "iconImgPath": "assets/images/Courses/Instructor/Aditya.png",
+      "instructorName": "Aditya Thakur",
+      "buttonName": "Watch"
+    },
+    {
+      "decoImgPath": "assets/images/cpicture1.png",
+      "heading": "FREE Mock IELTS/TOEFL",
+      "category": "Assessment test",
+      "iconImgPath": "assets/images/lang-logo.png",
+      "instructorName": "Languify",
+      "buttonName": "Try Now"
+    }
+  ];
 }

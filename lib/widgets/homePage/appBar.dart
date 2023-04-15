@@ -25,10 +25,10 @@ class AppBarClass{
             ),
             const Spacer(),
             // Icon(Icons.menu_sharp,color: Colors.black,)
-            Image.asset(
-              "assets/images/menu_icon.png",
-              width: 40,
-            ),
+            // Image.asset(
+            //   "assets/images/menu_icon.png",
+            //   width: 40,
+            // ),
           ],
         ),
       );
